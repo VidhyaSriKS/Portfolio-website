@@ -292,19 +292,10 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResume }) => {
 
         {/* Scroll Indicator */}
         <div
-          className={`pt-12 sm:pt-16 flex items-center justify-between text-xs font-mono-tech ${
+          className={`pt-12 sm:pt-16 flex items-center justify-end text-xs font-mono-tech ${
             isDark ? 'text-neutral-400' : 'text-neutral-600'
           }`}
         >
-          <div className="flex items-center gap-2">
-            <span
-              className={`w-1.5 h-1.5 rounded-full ${
-                isDark ? 'bg-[#C5FF4A]' : 'bg-[#5D7B1C]'
-              }`}
-            />
-            <span>PORTFOLIO v2.4 • INTERACTIVE EDITION</span>
-          </div>
-
           <a
             href="#about"
             className={`flex items-center gap-2 transition-colors group ${
